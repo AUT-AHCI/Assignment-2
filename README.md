@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+<h1 align="center">
+	<br>
+	<a height="200" href="#" target="_blank" alt="Link to application"><img src="https://aut-games.herokuapp.com/logo512.png" alt="Random image" width="200"></a>
+	<br>
+	<br>
+	<p>Aut Games</p>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">An open source poker game website made for the <a href="https://beta.myskillsme.com/" target="_blank" alt="Link to skills me">Skillsme</a> Auckland Student Coding Hackathon</h4>
 
-## Available Scripts
+<p align="center">
+        <img src="https://img.shields.io/badge/Express%20Version-%5E4.17.1-green" >
+        <img src="https://img.shields.io/badge/react%20Version-%5E17.0.2-green" >
+        <img src="https://img.shields.io/badge/socket.io%20Version-%5E4.0.1-green" >
+        <img src="https://img.shields.io/github/package-json/v/AUT-HACKATHON/aut-games/main?label=Stable%20Version&color=blueviolet">
+        <img src="https://img.shields.io/github/package-json/v/AUT-HACKATHON/aut-games/swagger?label=Next%20Version&color=lightgrey">
 
-In the project directory, you can run:
+</p>
 
-### `yarn start`
+<p align="center">
+		<a href="#demo">Demo</a> •
+		<a href="#how-to-use">How To Use</a> •
+		<a href="#key-features">Key Features</a> •
+		<a href="#local-instance">Local Instance</a> •
+		<a href="#license">License</a> •
+		<a href="#credits">Credits</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Front end Demo: <a href="https://youtube.com">https://youtube.com</a>
 
-### `yarn test`
+## How To Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Go to <a href="https://aut-games.herokuapp.com/">https://aut-games.herokuapp.com/</a> create an account / login.
 
-### `yarn build`
+Click create a game or get a link/game id from a friend and click join a game.<br />
+Play poker with a friend and enjoy!<br />
+There is 15 seconds inbetween games for players to leave, or leave anytime to be refunded your tokens.<br />
+View the leader board by clicking it in the header.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<ul>
+<li>Join from url link</li>
+<li>Share to Facebook/Twitter/Whatsapp</li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Local Instance
 
-### `yarn eject`
+```sh
+git clone https://github.com/AUT-HACKATHON/aut-games.git ./games
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+and then
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd ./games && yarn;
+cd ./frontend && yarn
+cd ..
+cp .env.example .env
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+then fill out the .env providing your mongodb information and jwt secret
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm run dev
+```
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p> 
+<strong>The MIT License</strong><br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Copyright 2021 AUT Games
 
-### Code Splitting
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Analyzing the Bundle Size
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</p>
 
-### Making a Progressive Web App
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Discord [@Mac#7445](http://urlecho.appspot.com/echo?status=200&Content-Type=text%2Fhtml&body=%40Mac%237445) &nbsp;&middot;&nbsp;
+> Github [@MrGeet](https://github.com/MrGeet) &nbsp;&middot;&nbsp;<br>
+> Discord [@Dablakbandit#0001](http://urlecho.appspot.com/echo?status=200&Content-Type=text%2Fhtml&body=Dablakbandit%230001) &nbsp;&middot;&nbsp;
+> Github [@AshleyThew](https://github.com/AshleyThew)
