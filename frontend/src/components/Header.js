@@ -3,7 +3,6 @@ import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { AiOutlineUser } from 'react-icons/ai';
 import { UserContext } from '../UserContext';
-import { socket } from '../socket';
 
 const Header = () => {
 	const { user, setUser } = useContext(UserContext);
@@ -18,17 +17,6 @@ const Header = () => {
 			});
 		}
 	};
-
-	useEffect(() => {
-		if (user) {
-			setChips(user.chips);
-		}
-	}, [setChips, user]);
-	useEffect(() => {
-		socket.on('chipUpdate', (update) => {
-			setChips(update.chips);
-		});
-	}, [chips, setChips]);
 
 	const logoutHandler = () => {
 		localStorage.removeItem('userInfo');

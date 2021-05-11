@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { UserContext, register } from '../UserContext';
+import { UserProvider } from '../UserContext';
 
 const backgroundStyle = {
 	background:
@@ -20,7 +20,7 @@ const RegisterScreen = ({ history }) => {
 	const [message, setMessage] = useState(null);
 	const [error, setError] = useState(null);
 
-	const { user, setUser } = useContext(UserContext);
+	const { user, setUser } = useContext(UserProvider);
 
 	// const redirect = location.search ? location.search.split('=')[1] : '/';
 
@@ -38,7 +38,7 @@ const RegisterScreen = ({ history }) => {
 		} else {
 			try {
 				setMessage(null);
-				const user = await register(name, email, password);
+				//const user = await register(name, email, password);
 				setUser(user);
 			} catch (error) {
 				setError(

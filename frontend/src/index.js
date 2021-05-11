@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { UserProvider, init } from './UserContext';
+
+init();
 
 ReactDOM.render(
 	<React.Fragment>
-		<App />
+		<UserProvider>
+			<App />
+		</UserProvider>
 	</React.Fragment>,
 	document.getElementById('root')
 );
