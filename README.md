@@ -1,19 +1,18 @@
 <h1 align="center">
 	<br>
-	<a height="200" href="#" target="_blank" alt="Link to application"><img src="https://aut-games.herokuapp.com/logo512.png" alt="Random image" width="200"></a>
+	<a height="200" href="#" target="_blank" alt="Link to application"><img src="<img>" alt="Random image" width="200"></a>
 	<br>
 	<br>
 	<p>Aut Games</p>
 </h1>
 
-<h4 align="center">An open source poker game website made for the <a href="https://beta.myskillsme.com/" target="_blank" alt="Link to skills me">Skillsme</a> Auckland Student Coding Hackathon</h4>
+<h4 align="center">Desc</h4>
 
 <p align="center">
         <img src="https://img.shields.io/badge/Express%20Version-%5E4.17.1-green" >
         <img src="https://img.shields.io/badge/react%20Version-%5E17.0.2-green" >
-        <img src="https://img.shields.io/badge/socket.io%20Version-%5E4.0.1-green" >
-        <img src="https://img.shields.io/github/package-json/v/AUT-HACKATHON/aut-games/main?label=Stable%20Version&color=blueviolet">
-        <img src="https://img.shields.io/github/package-json/v/AUT-HACKATHON/aut-games/swagger?label=Next%20Version&color=lightgrey">
+        <img src="https://img.shields.io/github/package-json/v/AUT-AHCI/Assignment-2/main?label=Stable%20Version&color=blueviolet">
+        <img src="https://img.shields.io/github/package-json/v/AUT-AHCI/Assignment-2/swagger?label=Next%20Version&color=lightgrey">
 
 </p>
 
@@ -28,40 +27,30 @@
 
 ## Demo
 
-Front end Demo: <a href="https://youtube.com">https://youtube.com</a>
-
 ## How To Use
-
-Go to <a href="https://aut-games.herokuapp.com/">https://aut-games.herokuapp.com/</a> create an account / login.
-
-Click create a game or get a link/game id from a friend and click join a game.<br />
-Play poker with a friend and enjoy!<br />
-There is 15 seconds inbetween games for players to leave, or leave anytime to be refunded your tokens.<br />
-View the leader board by clicking it in the header.
 
 ## Key Features
 
-<ul>
-<li>Join from url link</li>
-<li>Share to Facebook/Twitter/Whatsapp</li>
-</ul>
-
 ## Local Instance
 
-```sh
-git clone https://github.com/AUT-HACKATHON/aut-games.git ./games
-```
+Go to frontend folder and **run _npm install_ to install all the dependencies**
 
-and then
+After dependencies are installed you can use following commands:
 
-```
-cd ./games && yarn;
-cd ./frontend && yarn
-cd ..
-cp .env.example .env
-```
+**yarn start**
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-then fill out the .env providing your mongodb information and jwt secret
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+**yarn test**
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
+
+**yarn build**
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ```
 npm run dev
@@ -72,7 +61,7 @@ npm run dev
 <p> 
 <strong>The MIT License</strong><br>
 
-Copyright 2021 AUT Games
+Copyright 2021
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -83,8 +72,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </p>
 
 ## Credits
-
-> Discord [@Mac#7445](http://urlecho.appspot.com/echo?status=200&Content-Type=text%2Fhtml&body=%40Mac%237445) &nbsp;&middot;&nbsp;
-> Github [@MrGeet](https://github.com/MrGeet) &nbsp;&middot;&nbsp;<br>
-> Discord [@Dablakbandit#0001](http://urlecho.appspot.com/echo?status=200&Content-Type=text%2Fhtml&body=Dablakbandit%230001) &nbsp;&middot;&nbsp;
-> Github [@AshleyThew](https://github.com/AshleyThew)
