@@ -12,7 +12,6 @@
         <img src="https://img.shields.io/badge/Express%20Version-%5E4.17.1-green" >
         <img src="https://img.shields.io/badge/react%20Version-%5E17.0.2-green" >
         <img src="https://img.shields.io/github/package-json/v/AUT-AHCI/Assignment-2/main?label=Stable%20Version&color=blueviolet">
-        <img src="https://img.shields.io/github/package-json/v/AUT-AHCI/Assignment-2/swagger?label=Next%20Version&color=lightgrey">
 
 </p>
 
