@@ -125,3 +125,8 @@ a {
 	text-decoration: none;
 	background-color: transparent;
 }
+
+.disclaimer-text {
+	height: 240px;
+	overflow-y: scroll;
+}
