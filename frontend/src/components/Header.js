@@ -43,8 +43,8 @@ const Header = () => {
 					{user ? (
 						<>
 							<Nav className="ml-auto mr-4">
-								<LinkContainer className="mx-1" to="/leaderboard">
-									<Nav.Link>Leader Board</Nav.Link>
+								<LinkContainer className="mx-1" to="/test">
+									<Nav.Link>Test</Nav.Link>
 								</LinkContainer>
 								<LinkContainer className="mx-1" to="/store">
 									<Nav.Link>Store</Nav.Link>
@@ -92,8 +92,8 @@ const Header = () => {
 								<LinkContainer to="/">
 									<Nav.Link onClick={() => scrollTo('team')}>Team</Nav.Link>
 								</LinkContainer>
-								<LinkContainer className="mx-1" to="/leaderboard">
-									<Nav.Link>Leader Board</Nav.Link>
+								<LinkContainer className="mx-1" to="/test">
+									<Nav.Link>Test</Nav.Link>
 								</LinkContainer>
 							</Nav>
 							<Nav>

@@ -10,7 +10,7 @@ import 'firebase/database';
 export function init() {
 	if (!firebase.apps.length) {
 		console.log(process.env.REACT_APP_FIREBASE_CONFIG);
-		firebase.initializeApp(JSON.parse(''));
+		firebase.initializeApp(JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG));
 	}
 }
 
