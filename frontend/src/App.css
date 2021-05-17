@@ -8,13 +8,13 @@ body {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #150f0f;
+	background-color: #0e1f33;
 	color: rgb(194, 194, 194);
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #a85f00;
+	background-color: #363636;
 	border-color: #880303;
 	transform: scaleX(1.05);
 }
@@ -51,6 +51,26 @@ body {
 	border: none;
 }
 
+.findingsBtn {
+	background-color: #2a8ca5;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 300;
+	padding: 16px 40px;
+	transition: all 0.2s linear;
+	border: none;
+}
+
+.signupBtn {
+	background-color: #506469;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 300;
+	padding: 16px 40px;
+	transition: all 0.2s linear;
+	border: none;
+}
+
 .navText {
 	color: rgb(194, 194, 194);
 }
@@ -72,7 +92,7 @@ body {
 }
 
 .nav-logo {
-	color: rgb(155, 15, 15);
+	color: rgb(15, 134, 155);
 
 	font-weight: 700;
 	font-size: 2rem;
