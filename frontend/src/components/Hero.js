@@ -12,6 +12,14 @@ const Hero = () => {
 		marginTop: '100px',
 	};
 
+	const h2Style = {
+		fontSize: '2rem',
+		fontWeight: '700',
+		lineHeight: '1.3',
+		marginBottom: '40px',
+		color: '#fefefe',
+	};
+
 	const containerStyle = {
 		background: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1))',
 		backgroundPosition: 'center',
@@ -19,29 +27,28 @@ const Hero = () => {
 		height: '100vh',
 	};
 
-	const videoStyle = {
-		objectFit: 'cover',
-		width: '100%',
-		height: '100%',
-		background: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1))',
-
-		position: 'absolute',
-		zIndex: '-1',
-	};
 
 	return (
 		<div style={containerStyle}>
-			<video style={videoStyle} src="./img/dices.mp4" autoPlay loop muted />
+			
 			{/* <Header></Header> */}
 
-			<Container className="vh-100 d-flex flex-column  align-items-center">
-				<h1 style={headerStyle}>Your game awaits</h1>
-				<Row className="d-flex justify-content-center flex-wrap align-items-center">
-					<LinkContainer to="/register" className="mx-2 my-1">
-						<Button className="heroBtn">Join now</Button>
+			<Container className="d-flex flex-column  align-items-center">
+				<h1 style={headerStyle}>Applied HCI</h1>
+				<h2 style={h2Style}>Delaware - Semester 1 2021</h2>
+				<h2 style={h2Style}>Sign-Up Study</h2>
+				
+				<Row>
+					<LinkContainer to="/findings" className="mx-2 my-4">
+						<Button className="findingsBtn">Study Findings</Button>
 					</LinkContainer>
-					<LinkContainer to="/login" className="mx-2 my-1">
-						<Button className="heroBtn">Start Playing</Button>
+				</Row>
+				<Row>
+					<LinkContainer to="/test" className="mx-2 my-5">
+						<Button className="signupBtn">Single Sign-Up Page</Button>
+					</LinkContainer>
+					<LinkContainer to="/test2" className="mx-2 my-5">
+						<Button className="signupBtn">Form Sign-Up Page</Button>
 					</LinkContainer>
 				</Row>
 			</Container>
