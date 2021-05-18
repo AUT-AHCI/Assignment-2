@@ -1,27 +1,24 @@
 import React, { useEffect, } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-// var ScrollBox = require('react-scroll-box').ScrollBox; // ES5
-import {ScrollBox, ScrollAxes, FastTrack} from 'react-scroll-box'; // ES6
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Disclaimer = () => {
 	
 
 	return (
 		<div>
-			<Container className="d-flex flex-column justify-content-center align-items-center h-100 w-50 my-5">
-				<h2>Disclaimer</h2>
+			<Container className="d-flex flex-column justify-content-center align-items-center w-50 my-5">
+				<h2>Consent Form</h2>
+				<h4>Before proceeding, please take a moment to review and accept the below terms, along with the linked information sheet.</h4>
 				<div className="disclaimer-text">
 				<form>
 					<table>
-						<tr>
-							<th>Accept</th>
-						</tr>
 						<tr>
 							<td>
 								<input type="checkbox" id="term1" name="term1" /><br />
 							</td>
 							<td>
-								<label for="term1">I have read and understood the <a href="" target="_blank">information</a> provided about this research project in the Information Sheet dated 18/05/2021.</label><br />
+								<label for="term1">I have read and understood the information provided about this research project in the <a href="" target="_blank">Information Sheet</a> dated 18th May 2021.</label><br />
 							</td>
 						</tr>
 						<tr>
@@ -30,22 +27,6 @@ const Disclaimer = () => {
 							</td>
 							<td>
 								<label for="term2">I have had an opportunity to ask questions and to have them answered.</label><br />
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="checkbox" id="term3" name="term3" />
-							</td>
-							<td>
-								<label for="term3">I understand that notes will be taken during the interviews and that they will also be audio-taped and transcribed.  (delete if not required)</label><br />
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="checkbox" id="term4" name="term4" />
-							</td>
-							<td>
-							<label for="term4">I understand that I will be recorded on video, but that this is then analysed and my face or any distinguishing features will not be used in any publication.  The video tapes will be then be stored in a locked cupboard in the office of the School of Engineering Computing and Mathematical Sciences.  (delete if not required)</label><br />
 							</td>
 						</tr>
 						<tr>
@@ -72,15 +53,9 @@ const Disclaimer = () => {
 								<label for="term7">I agree to take part in this research.</label><br />
 							</td>
 						</tr>
-						<tr>
-							<td>
-								<input type="checkbox" id="term8" name="term8" />
-							</td>
-							<td>
-								<label for="term8">I wish to receive a summary of the research findings (please tick one):</label><br />
-							</td>
-						</tr>
 					</table>
+					<br/><br/>
+					<p>I wish to receive a summary of the research findings (please tick one):</p>
 					<table>
 						<tr>
 							<td>
@@ -95,6 +70,13 @@ const Disclaimer = () => {
 					</table>
 				</form>
 				</div>
+			</Container>
+			<Container className="d-flex flex-column  align-items-center">
+				<Row>
+					<LinkContainer to="/test" className="mx-2 my-2">
+						<Button className="activityBtn">Start Research Activity</Button>
+					</LinkContainer>
+				</Row>
 			</Container>
 		</div>
 	);
