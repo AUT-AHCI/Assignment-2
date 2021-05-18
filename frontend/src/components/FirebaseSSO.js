@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Fade from 'react-reveal';
 import firebase from 'firebase';
+import GoogleButton from 'react-google-button';
 
-const FirebaseSSO = () => {
+const FirebaseSSO = ({ history }) => {
 	var provider = new firebase.auth.GoogleAuthProvider();
 
 	function signUp() {
@@ -39,7 +39,7 @@ const FirebaseSSO = () => {
 		<div>
 			<Container className="d-flex flex-column justify-content-center align-items-center h-100 my-5">
 				<h2>SSO</h2>
-				<Button onClick={signUp}></Button>
+				<GoogleButton onClick={signUp} />
 			</Container>
 		</div>
 	);

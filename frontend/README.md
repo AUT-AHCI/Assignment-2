@@ -3,7 +3,7 @@
 	<a height="200" href="#" target="_blank" alt="Link to application"><img src="<img>" alt="Random image" width="200"></a>
 	<br>
 	<br>
-	<p>Aut Games</p>
+	<p>AHCI - Sign-Up Study</p>
 </h1>
 
 <h4 align="center">Desc</h4>

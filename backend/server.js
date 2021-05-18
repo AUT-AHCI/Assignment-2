@@ -1,11 +1,8 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const userRoutes = require('./routes/userRoutes');
 var cors = require('cors');
 const path = require('path');
 const { notFound, errorHandler } = require('./middleware/error');
-
-dotenv.config();
 
 const app = express();
 
@@ -17,7 +14,7 @@ app.use(express.json({ extended: false }));
 
 //ROUTES
 // app.use('/api/articles', bookRoutes);
-//app.use('/api/users', userRoutes);
+app.use('/api/users', userRoutes);
 
 //Check production or dev
 if (process.env.NODE_ENV === 'production') {
@@ -26,7 +23,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.get('*', (req, res) => res.sendFile(path.resolve('frontend', 'build', 'index.html')));
 } else {
 	app.get('/', (req, res) => {
-		res.send('Hello fellow HACKATHON the app is running yaay!!!!');
+		res.send('is this thing on');
 	});
 }
 
