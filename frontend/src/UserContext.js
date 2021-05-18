@@ -10,7 +10,8 @@ import 'firebase/database';
 export function init() {
 	if (!firebase.apps.length) {
 		console.log(process.env.REACT_APP_FIREBASE_CONFIG);
-		firebase.initializeApp(JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG));
+		firebase.initializeApp(JSON.parse('{"apiKey": "AIzaSyCBs8co4LF-0NFRww8nj4u6QMAYn2_yiS4", "authDomain": "aut-ahci.firebaseapp.com", "projectId": "aut-ahci", "storageBucket": "aut-ahci.appspot.com", "messagingSenderId": "418062579146", "appId": "1:418062579146:web:021fcfd4280fdaeb8d4b33"}'));
+		
 	}
 }
 
