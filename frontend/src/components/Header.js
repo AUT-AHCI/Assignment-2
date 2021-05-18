@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { UserContext } from '../UserContext';
+import { AiOutlineUser } from 'react-icons/ai';
 
 const Header = () => {
-	const { user } = useContext(UserContext);
-
 	const scrollTo = (id) => {
 		const element = document.getElementById(id);
 
@@ -33,17 +31,6 @@ const Header = () => {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse className="justify-content-end">
-					{user ? (
-						<>
-							<Nav className="ml-auto mr-4">
-								<LinkContainer className="mx-1" to="/test">
-									<Nav.Link>Test</Nav.Link>
-								</LinkContainer>
-							</Nav>
-						</>
-					) : (
-						<>
-							<Nav className="ml-auto mr-4">
 					<>
 						<Nav className="ml-auto mr-4">
 							<LinkContainer className="mx-1" to="/test">
