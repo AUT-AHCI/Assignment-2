@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { UserProvider } from '../UserContext';
+import { UserProvider } from '../firebase';
 import zxcvbn from 'zxcvbn';
 
 const backgroundStyle = {
@@ -14,12 +14,8 @@ const backgroundStyle = {
 };
 
 const PASSWORD_MIN_LENGTH = 7;
-const regexrLowercase = /[a-z]/gm;
-const regexUppercase = /[A-Z]/gm;
-const regexDigit = /\d/gm;
-const regexSpecial = /.*\W/gm;
 
-const RegisterScreen = ({ history }) => {
+const RegisterForm = ({ history }) => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
@@ -39,15 +35,31 @@ const RegisterScreen = ({ history }) => {
 			setMessage('Please enter a email');
 			return;
 		}
-		if (!password || password.length <= PASSWORD_MIN_LENGTH) {
-			setMessage('Please enter a password');
+		console.log(password, confirmPassword);
+		const regexLowercase = /[a-z]/gm;
+		const regexUppercase = /[A-Z]/gm;
+		const regexDigit = /\d/gm;
+		const regexSpecial = /.*\W/gm;
+		if (!password || password.length < PASSWORD_MIN_LENGTH) {
+			setMessage('Password not long enough');
 			return;
 		}
-		if (!confirmPassword || confirmPassword.length <= PASSWORD_MIN_LENGTH) {
-			setMessage('Please confirm your password');
+		if (!regexLowercase.test(password)) {
+			setMessage('Password must contain lowercase');
 			return;
 		}
-
+		if (!regexUppercase.test(password)) {
+			setMessage('Password must contain uppercase');
+			return;
+		}
+		if (!regexDigit.test(password)) {
+			setMessage('Password must contain a digit');
+			return;
+		}
+		if (!regexSpecial.test(password)) {
+			setMessage('Password must contain a special character');
+			return;
+		}
 		if (password !== confirmPassword) {
 			setMessage('Passwords do not match');
 			return;
@@ -77,9 +89,7 @@ const RegisterScreen = ({ history }) => {
 								<Form.Label className="text-style  ">Name</Form.Label>
 								<Form.Control
 									readOnly="readonly"
-									onFocus={(e) =>
-										console.log(e.target.removeAttribute('readonly'))
-									}
+									onFocus={(e) => e.target.removeAttribute('readonly')}
 									autoComplete="none"
 									type="text"
 									placeholder="Enter Name"
@@ -93,9 +103,7 @@ const RegisterScreen = ({ history }) => {
 								<Form.Label className="text-style  ">Email</Form.Label>
 								<Form.Control
 									readOnly="readonly"
-									onFocus={(e) =>
-										console.log(e.target.removeAttribute('readonly'))
-									}
+									onFocus={(e) => e.target.removeAttribute('readonly')}
 									autoComplete="none"
 									type="email"
 									placeholder="Enter Email"
@@ -108,9 +116,7 @@ const RegisterScreen = ({ history }) => {
 								<Form.Label className="text-style  ">Password</Form.Label>
 								<Form.Control
 									readOnly="readonly"
-									onFocus={(e) =>
-										console.log(e.target.removeAttribute('readonly'))
-									}
+									onFocus={(e) => e.target.removeAttribute('readonly')}
 									autoComplete="new-password"
 									type="password"
 									placeholder="Enter Password"
@@ -124,9 +130,7 @@ const RegisterScreen = ({ history }) => {
 								<Form.Label className="text-style  ">Password</Form.Label>
 								<Form.Control
 									readOnly="readonly"
-									onFocus={(e) =>
-										console.log(e.target.removeAttribute('readonly'))
-									}
+									onFocus={(e) => e.target.removeAttribute('readonly')}
 									autoComplete="new-password"
 									type="password"
 									placeholder="Confirm Password"
@@ -149,4 +153,4 @@ const RegisterScreen = ({ history }) => {
 	);
 };
 
-export default RegisterScreen;
+export default RegisterForm;
