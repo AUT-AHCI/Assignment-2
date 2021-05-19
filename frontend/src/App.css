@@ -152,12 +152,12 @@ h4 {
 	margin-bottom: 50px;
 }
 
-input[type=checkbox] {
+input[type='checkbox'] {
 	margin-right: 10px;
 	margin-bottom: 25px;
 }
 
-input[type=radio] {
+input[type='radio'] {
 	margin-left: 20px;
 }
 
@@ -166,8 +166,45 @@ label {
 	margin-bottom: 20px;
 }
 
-
 /* .disclaimer-text {
 	height: 240px;
 	overflow-y: scroll;
 } */
+.team-member {
+	width: auto;
+	margin: 5px;
+	margin-bottom: 50px;
+	background-color: #fff;
+	color: darkgrey;
+	/* text-align: left; */
+	border-radius: 10px;
+	letter-spacing: 0.25px;
+}
+.team-member p {
+	margin-bottom: 25px;
+
+	padding: 0;
+	margin: 0;
+}
+.team-member h2 {
+	color: rgb(79, 85, 81);
+	font-size: 28px;
+	margin-top: 50px;
+	margin-left: 20px;
+	text-align: left;
+}
+.wrapper {
+	margin-top: 6%;
+}
+.wrapper h1 {
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.team {
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	line-height: 30px;
+}
