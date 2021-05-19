@@ -61,7 +61,7 @@ body {
 	border: none;
 }
 
-.signupBtn {
+.activityBtn {
 	background-color: #506469;
 	color: #fff;
 	font-size: 1.1rem;
@@ -145,3 +145,29 @@ a {
 	text-decoration: none;
 	background-color: transparent;
 }
+
+h4 {
+	text-align: center;
+	font-size: 110%;
+	margin-bottom: 50px;
+}
+
+input[type=checkbox] {
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
+
+input[type=radio] {
+	margin-left: 20px;
+}
+
+label {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* .disclaimer-text {
+	height: 240px;
+	overflow-y: scroll;
+} */

@@ -44,11 +44,8 @@ const Hero = () => {
 					</LinkContainer>
 				</Row>
 				<Row>
-					<LinkContainer to="/test" className="mx-2 my-5">
-						<Button className="signupBtn">Single Sign-Up Page</Button>
-					</LinkContainer>
-					<LinkContainer to="/test2" className="mx-2 my-5">
-						<Button className="signupBtn">Form Sign-Up Page</Button>
+					<LinkContainer to="/disclaimer" className="mx-2 my-5">
+						<Button className="activityBtn">Start Research Activity</Button>
 					</LinkContainer>
 				</Row>
 			</Container>
