@@ -45,7 +45,7 @@ const Hero = () => {
 				</Row>
 				<Row>
 					<LinkContainer to="/disclaimer" className="mx-2 my-4">
-						<Button className="activityBtn">Start Research Activity</Button>
+						<Button className="signupBtn">Start Research Activity</Button>
 					</LinkContainer>
 				</Row>
 			</Container>
