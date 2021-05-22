@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { UserProvider, init } from './UserContext';
+import { init } from './firebase';
 
 init();
 
 ReactDOM.render(
 	<React.Fragment>
-		<UserProvider>
-			<App />
-		</UserProvider>
+		<App />
 	</React.Fragment>,
 	document.getElementById('root')
 );

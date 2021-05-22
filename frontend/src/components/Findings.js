@@ -18,7 +18,22 @@ const Findings = () => {
                 <br/><br/><br/>
                 <h1>Findings</h1>
                 <br/>
-                <p>the question is, i dont know what im doing</p>
+                <p>check out this sweet blank page</p>
+
+                <br/><br/><br/>
+                <h1>How The Testing Went</h1>
+                <br/>
+                <p>it hasn't</p>
+
+                <br/><br/><br/>
+                <h1>HCI Discoveries</h1>
+                <br/>
+                <p>wow</p>
+
+                <br/><br/><br/>
+                <h1>Results</h1>
+                <br/>
+                <p>we need some of these probably</p>
 
                 <br/><br/><br/>
             </Container>
