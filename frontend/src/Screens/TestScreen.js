@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FirebaseSSO from '../components/FirebaseSSO';
-import Discliamer from '../components/Disclaimer';
 import RegisterForm from '../components/RegisterForm';
+import Disclaimer from '../components/Disclaimer';
 
 const Pages = {
 	DISCLAIMER: 'Disclaimer',
@@ -18,7 +18,7 @@ const TestScreen = ({ history }) => {
 	let component = null;
 	switch (page) {
 		case Pages.DISCLAIMER:
-			component = <Discliamer next={() => setPage(Pages.SSO)} />;
+			component = <Disclaimer next={() => setPage(Pages.SSO)} />;
 			break;
 		case Pages.SSO:
 			component = (
