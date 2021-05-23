@@ -3,24 +3,35 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import firebase from 'firebase';
 import GoogleButton from 'react-google-button';
 
-const FirebaseSSO = ({ history }) => {
+const FirebaseSSO = ({ timeMethod, emailMethod, next }) => {
 	var provider = new firebase.auth.GoogleAuthProvider();
+
+	const time = new Date().getTime();
+
+	//console.log(method);
+	//method(time);
 
 	function signUp() {
 		firebase
 			.auth()
 			.signInWithPopup(provider)
 			.then((result) => {
+				var timeTaken = (new Date().getTime() - time) / 1000.0;
 				/** @type {firebase.auth.OAuthCredential} */
 				var credential = result.credential;
 
 				// This gives you a Google Access Token. You can use it to access the Google API.
-				var token = credential.accessToken;
-				console.log(credential);
+				//var token = credential.accessToken;
+				//console.log(credential);
 				// The signed-in user info.
 				var user = result.user;
 				console.log(user);
 				console.log(user.email);
+				console.log(timeTaken);
+
+				timeMethod(timeTaken);
+				emailMethod(user.email);
+				next();
 				// ...
 			})
 			.catch((error) => {

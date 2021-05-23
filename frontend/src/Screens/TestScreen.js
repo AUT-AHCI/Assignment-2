@@ -1,18 +1,43 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import FirebaseSSO from '../components/FirebaseSSO';
 import Discliamer from '../components/Disclaimer';
 import RegisterForm from '../components/RegisterForm';
-import AboutUs from '../components/AboutUs';
+
+const Pages = {
+	DISCLAIMER: 'Disclaimer',
+	SSO: 'SSO',
+	FORM: 'Form',
+};
 
 const TestScreen = ({ history }) => {
-	return (
-		<>
-			<FirebaseSSO></FirebaseSSO>
-			<RegisterForm></RegisterForm>
-			<Discliamer></Discliamer>
-			<AboutUs></AboutUs>
-		</>
-	);
+	const [page, setPage] = useState(Pages.DISCLAIMER);
+	const [email, setEmail] = useState(null);
+	const [ssoTime, setSsoTime] = useState(null);
+	const [formTime, setFormTime] = useState(null);
+
+	let component = null;
+	switch (page) {
+		case Pages.DISCLAIMER:
+			component = <Discliamer next={() => setPage(Pages.SSO)} />;
+			break;
+		case Pages.SSO:
+			component = (
+				<FirebaseSSO
+					timeMethod={setSsoTime}
+					emailMethod={setEmail}
+					next={() => setPage(Pages.FORM)}
+				/>
+			);
+			break;
+		case Pages.FORM:
+			component = <RegisterForm />;
+			break;
+		default:
+			<div>Hello</div>;
+			break;
+	}
+
+	return <>{component}</>;
 };
 
 export default TestScreen;
