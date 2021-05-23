@@ -27,24 +27,22 @@ const Hero = () => {
 		height: '660px',
 	};
 
-
 	return (
 		<div style={containerStyle}>
-			
 			{/* <Header></Header> */}
 
 			<Container className="d-flex flex-column  align-items-center">
 				<h1 style={headerStyle}>Applied HCI</h1>
 				<h2 style={h2Style}>Delaware - Semester 1 2021</h2>
 				<h2 style={h2Style}>Sign-Up Study</h2>
-				
+
 				<Row>
 					<LinkContainer to="/findings" className="mx-2 my-2">
 						<Button className="findingsBtn">Study Findings</Button>
 					</LinkContainer>
 				</Row>
 				<Row>
-					<LinkContainer to="/disclaimer" className="mx-2 my-5">
+					<LinkContainer to="/survey" className="mx-2 my-5">
 						<Button className="activityBtn">Start Research Activity</Button>
 					</LinkContainer>
 				</Row>

@@ -33,8 +33,8 @@ const Header = () => {
 				<Navbar.Collapse className="justify-content-end">
 					<>
 						<Nav className="ml-auto mr-4">
-							<LinkContainer className="mx-1" to="/test">
-								<Nav.Link>Test</Nav.Link>
+							<LinkContainer className="mx-1" to="/survey">
+								<Nav.Link>Take Survey</Nav.Link>
 							</LinkContainer>
 						</Nav>
 					</>

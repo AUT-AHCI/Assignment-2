@@ -1,8 +1,9 @@
 const express = require('express');
-const { submitData } = require('../controllers/userController');
+const { insertTime, insertSurvey } = require('../controllers/userController');
 
 const router = express.Router();
 
-router.route('/submit').post(submitData);
+router.route('/time').post(insertTime);
+router.route('/survey').post(insertSurvey);
 
 module.exports = router;
