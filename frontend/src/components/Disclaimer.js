@@ -2,14 +2,21 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-const Disclaimer = ({ next }) => {
-	function submit(event) {
-		for (var i = 0; i <= 7; i++) {
+const Disclaimer = ({ next, setRecieve }) => {
+	function submit() {
+		for (var i = 1; i <= 5; i++) {
 			const value = document.getElementById('term' + i);
-			console.log(value.checked);
+			if (!value.checked) {
+				return;
+			}
 		}
-		console.log(event);
-		//next();
+		const recieveYes = document.getElementById('term6');
+		const recieveNo = document.getElementById('term7');
+		if (!recieveYes.checked && !recieveNo.checked) {
+			return;
+		}
+		setRecieve(recieveYes.checked);
+		next();
 	}
 
 	return (
@@ -118,15 +125,17 @@ const Disclaimer = ({ next }) => {
 				</Container>
 				<Container className="d-flex flex-column  align-items-center">
 					<Row>
-						<LinkContainer to="/test" className="mx-2 my-2">
+						<div className="mx-2 my-2">
 							<Button
 								className="activityBtn"
-								type="submit"
-								onClick={(e) => submit(e)}
+								onClick={(e) => {
+									e.preventDefault();
+									submit();
+								}}
 							>
 								Start Research Activity
 							</Button>
-						</LinkContainer>
+						</div>
 					</Row>
 				</Container>
 			</Form>

@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { UserProvider } from '../firebase';
-import zxcvbn from 'zxcvbn';
 
 const backgroundStyle = {
 	background:
@@ -15,7 +12,7 @@ const backgroundStyle = {
 
 const PASSWORD_MIN_LENGTH = 7;
 
-const RegisterForm = ({ history }) => {
+const RegisterForm = ({ timeMethod, next, time }) => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
@@ -25,8 +22,10 @@ const RegisterForm = ({ history }) => {
 
 	// const redirect = location.search ? location.search.split('=')[1] : '/';
 
-	const submitHandler = async (e) => {
+	const submitHandler = (e) => {
 		e.preventDefault();
+		var timeTaken = (new Date().getTime() - time) / 1000.0;
+		console.log(timeTaken);
 		if (!name || name.length === 0) {
 			setMessage('Please enter a name');
 			return;
@@ -35,7 +34,6 @@ const RegisterForm = ({ history }) => {
 			setMessage('Please enter a email');
 			return;
 		}
-		console.log(password, confirmPassword);
 		const regexLowercase = /[a-z]/gm;
 		const regexUppercase = /[A-Z]/gm;
 		const regexDigit = /\d/gm;
@@ -66,9 +64,10 @@ const RegisterForm = ({ history }) => {
 		}
 
 		try {
+			e.target.disabled = true;
 			setMessage(null);
-			//const user = await register(name, email, password);
-			//setUser(user);
+			timeMethod(timeTaken);
+			next();
 		} catch (error) {
 			setError(
 				error.response && error.response.data.message
@@ -81,9 +80,11 @@ const RegisterForm = ({ history }) => {
 	return (
 		<div style={backgroundStyle}>
 			<Container>
+				<br></br>
+				<h2>Login Form</h2>
 				<Row className="d-flex justify-content-center ">
-					<Col md={8} xs={12}>
-						<Form onSubmit={submitHandler} className="my-5">
+					<Col md={4} xs={12}>
+						<Form className="my-5">
 							<input type="hidden" value="something"></input>
 							<Form.Group controlId="name">
 								<Form.Label className="text-style  ">Name</Form.Label>
@@ -140,7 +141,7 @@ const RegisterForm = ({ history }) => {
 								></Form.Control>
 							</Form.Group>
 
-							<Button type="submit" variant="primary" className="my-2">
+							<Button onClick={submitHandler} variant="primary" className="my-2">
 								Register
 							</Button>
 							{message && <Alert variant="info">{message}</Alert>}
