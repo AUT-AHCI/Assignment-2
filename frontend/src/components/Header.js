@@ -1,19 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { AiOutlineUser } from 'react-icons/ai';
 
 const Header = () => {
-	const scrollTo = (id) => {
-		const element = document.getElementById(id);
-
-		if (element) {
-			element.scrollIntoView({
-				behavior: 'smooth',
-			});
-		}
-	};
-
 	return (
 		<Navbar
 			className="navbar"

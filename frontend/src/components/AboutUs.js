@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const AboutUs = () => {
 	return (

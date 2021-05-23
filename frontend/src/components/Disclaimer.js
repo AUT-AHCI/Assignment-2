@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import React from 'react';
+import { Container, Row, Button, Form } from 'react-bootstrap';
 
 const Disclaimer = ({ next, setRecieve }) => {
 	function submit() {
