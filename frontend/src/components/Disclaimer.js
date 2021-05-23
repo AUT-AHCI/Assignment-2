@@ -55,7 +55,7 @@ const Disclaimer = () => {
 						</tr>
 					</table>
 					<br/><br/>
-					<p>I wish to receive a summary of the research findings (please tick one):</p>
+					<h5>I wish to receive a summary of the research findings (please tick one):</h5>
 					<table>
 						<tr>
 							<td>

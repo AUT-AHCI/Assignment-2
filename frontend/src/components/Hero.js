@@ -24,7 +24,7 @@ const Hero = () => {
 		background: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1))',
 		backgroundPosition: 'center',
 		backgroundSize: 'cover',
-		height: '100vh',
+		height: '660px',
 	};
 
 
@@ -39,7 +39,7 @@ const Hero = () => {
 				<h2 style={h2Style}>Sign-Up Study</h2>
 				
 				<Row>
-					<LinkContainer to="/findings" className="mx-2 my-4">
+					<LinkContainer to="/findings" className="mx-2 my-2">
 						<Button className="findingsBtn">Study Findings</Button>
 					</LinkContainer>
 				</Row>
