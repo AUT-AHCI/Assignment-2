@@ -18,7 +18,7 @@ const Findings = () => {
                 <br/><br/><br/>
                 <h1>Findings</h1>
                 <br/>
-                <p>check out this sweet blank page</p>
+                <p>Over the course of our testing phase, we were able to retrieve x results from participants.</p>
 
                 <br/><br/><br/>
                 <h1>How The Testing Went</h1>
@@ -26,14 +26,19 @@ const Findings = () => {
                 <p>it hasn't</p>
 
                 <br/><br/><br/>
-                <h1>HCI Discoveries</h1>
-                <br/>
-                <p>wow</p>
-
-                <br/><br/><br/>
                 <h1>Results</h1>
                 <br/>
                 <p>we need some of these probably</p>
+
+                <br/><br/><br/>
+                <h1>Data Analysis</h1>
+                <br/>
+                <p>looks like the cheese is melted</p>
+
+                <br/><br/><br/>
+                <h1>HCI Discoveries</h1>
+                <br/>
+                <p>wow</p>
 
                 <br/><br/><br/>
             </Container>

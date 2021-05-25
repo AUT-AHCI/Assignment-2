@@ -16,17 +16,24 @@ const Description = () => {
 				<br />
 				<br />
 				<br />
-				<h1>Overview</h1>
+				<h1>Summary</h1>
 				<br />
-				<p>the question is, i dont know what im doing</p>
+				<p>This research study was undertaken in May 2021 to discover if there are any usability issues surrounding sign-up forms, and if there is truly a clear advantage of using single-sign-on (SSO) compared to traditional form sign up.</p>
+				<p>To conduct this study, we developed a prototype website containing a sign-up form, which requires specific criteria to be met for fields such as the password. The presence of a SSO method is also given, to gauge how users find it and if there is much efficiency gained from using it.</p>
+				<p>This website was distributed amongst potential test users to gauge their preferences and performances, with a survey at the end to gather feedback and preferences.</p>
 
 				<br />
 				<br />
 				<br />
-				<h1>Hypothesis</h1>
 				<br />
-				<p>we think, bees</p>
+				<h1>Question & Hypothesis</h1>
+				<br />
+				<p>The question we aim to answer through conducting this study is:</p>
+				<p>Are traditional sign up forms still ideal in this day and age? Are there any evident usability issues with it, and can we improve it, such as through using SSO?</p>
+				<br />
+				<p>Our hypothesis is that bees are pretty cool, and that we shouldn't care about websites. let's look at bees instead.</p>
 
+				<br />
 				<br />
 				<br />
 				<br />
@@ -51,6 +58,7 @@ const Description = () => {
 					</Row>
 				</Container>
 
+				<br />
 				<br />
 				<br />
 				<br />
