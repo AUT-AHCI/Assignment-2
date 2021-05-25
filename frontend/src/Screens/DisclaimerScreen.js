@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import Disclaimer from '../components/Disclaimer';
-import RegisterForm from '../components/RegisterForm';
 
 const TestScreen = ({ history }) => {
 	return (

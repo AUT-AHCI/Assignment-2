@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import Findings from '../components/Findings';
 import Footer from '../components/Footer';
 // import './Buttons.css';

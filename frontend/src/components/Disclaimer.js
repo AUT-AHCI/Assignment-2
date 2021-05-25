@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import React from 'react';
+import { Container, Row, Button, Form } from 'react-bootstrap';
 
 const Disclaimer = ({ next, setRecieve }) => {
 	function submit() {
@@ -40,7 +39,7 @@ const Disclaimer = ({ next, setRecieve }) => {
 										<label htmlFor="term1">
 											I have read and understood the information provided
 											about this research project in the{' '}
-											<a href="" target="_blank">
+											<a href="InformationSheet.pdf" target="_blank">
 												Information Sheet
 											</a>{' '}
 											dated 18th May 2021.
