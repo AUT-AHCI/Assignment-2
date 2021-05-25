@@ -7,7 +7,7 @@ const Description = () => {
 		background: 'rgba(0, 0, 0, 0.6)',
 		backgroundPosition: 'center',
 		backgroundSize: 'cover',
-		height: '100%',
+		height: '100%'
 	};
 
 	return (
@@ -76,12 +76,18 @@ const Description = () => {
 
 				<h4>Quantitative Research</h4>
 				<p>
-					As described by Fischler (n.d), quantitative research primarily follows the six steps
-					of identifying a problem, justifying the problem, identifying and specifying data items
-					to measure/observe,	collecting data, analsying and intepreting the data, and
-					finally reviewing, evaluating and reporting the data.
+					Quantitative research is divided into two areas of study, descriptive, and experimental
+					(University of Southern California, 2021). Descriptive study measures each subject once,
+					whereas experimental measures subjects twice, typically before and after the item of testing.
+					In our case, descriptive study is ideal, as we are analysing the subject's usage of the test item.
 				</p>
-				<p>The theory behind quantitative is...</p>
+				<br />
+				<p>
+					As described by Fischler (n.d), quantitative research has a particular emphasis
+					on collecting and analysing information	in the form of numbers. It serves as an effective
+					means on comparing groups and measuring distinct attributes about individuals in groups,
+					through methods such as experiments, surveys, and correlational studies.
+				</p>
 				<br />
 
 				<h4>A/B Testing</h4>
@@ -113,6 +119,12 @@ const Description = () => {
 				<br />
 				<div className="references">
 				<h1>References</h1>
+				<p>
+					University of Southern California. (2021).
+					<em> Quantitative Methods. </em>
+					Retrieved May 25, 2021, from
+					https://libguides.usc.edu/writingguide/quantitative
+				</p>
 				<p>
 					Fischler, S. (n.d).
 					<em> Quantitative Research Methods. </em>
