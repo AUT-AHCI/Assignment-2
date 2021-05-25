@@ -39,7 +39,7 @@ const Disclaimer = ({ next, setRecieve }) => {
 										<label htmlFor="term1">
 											I have read and understood the information provided
 											about this research project in the{' '}
-											<a href="" target="_blank">
+											<a href="InformationSheet.pdf" target="_blank">
 												Information Sheet
 											</a>{' '}
 											dated 18th May 2021.
