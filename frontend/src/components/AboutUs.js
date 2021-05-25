@@ -5,19 +5,14 @@ const AboutUs = () => {
 	return (
 		<div className="wrapper">
 			<h1>
-				<b>About US</b>
+				<b>About The Team</b>
 			</h1>
 			<Container className="team">
 				<div className="team-member">
 					<h2>Aaron</h2>
 					<p>
-						Text Here... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Placeat expedita dignissimos debitis sit a fugit nihil quae ipsa laboriosam
-						repellat asperiores amet quidem, doloribus molestias excepturi sapiente
-						distinctio inventore temporibus. Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Ipsum non quasi iure sunt totam! Id adipisci saepe beatae
-						corporis atque porro, reiciendis accusamus incidunt aliquid voluptatum
-						labore eum sed aut?
+						inside this one's mind, there is a scale that weighs that mischievous arece 
+						that berates others and a kind arece that allows others to fish the southern waters
 					</p>
 				</div>
 				<div className="team-member">

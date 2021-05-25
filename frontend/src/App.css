@@ -160,7 +160,8 @@ h2 {
 h4 {
 	text-align: center;
 	font-size: 110%;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 input[type='checkbox'] {
@@ -182,6 +183,10 @@ p {
 	line-height: 1.4;
 }
 
+li {
+	line-height: 1.8;
+}
+
 /* .disclaimer-text {
 	height: 240px;
 	overflow-y: scroll;
@@ -198,7 +203,7 @@ p {
 }
 .team-member p {
 	margin-bottom: 25px;
-
+	text-align: center;
 	padding: 0;
 	margin: 0;
 }
@@ -207,7 +212,7 @@ p {
 	font-size: 28px;
 	margin-top: 50px;
 	margin-left: 20px;
-	text-align: left;
+	text-align: center;
 }
 .wrapper {
 	margin-top: 6%;
