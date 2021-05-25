@@ -103,9 +103,9 @@ const Disclaimer = ({ next, setRecieve }) => {
 						</table>
 						<br />
 						<br />
-						<p>
+						<h5>
 							I wish to receive a summary of the research findings (please tick one):
-						</p>
+						</h5>
 						<table>
 							<tbody>
 								<tr>
