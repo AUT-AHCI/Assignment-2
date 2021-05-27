@@ -117,9 +117,22 @@ const Description = () => {
 				<br />
 
 				<h4>A/B Testing</h4>
-				<p>A/B testing processes involve...</p>
-				<p>The theory behind A/B testing is...</p>
+				<p>
+					The methods involved in A/B testing typically follow the process of identifying 
+					elements to compare and measure, creating variations of the product reflecting 
+					differences in the identified elements, running the experiment to gauge the effects 
+					on test users, and finally analysing the data results (Optimizely, nd.).
+				</p>
 				<br />
+				<p>
+					A/B testing is a method of comparing two versions of a webpage or app against each 
+					other (Optimizely, n.d) to determine which one performs better. It allows for 
+					checking focused questions about the product being researched, to measure the impact 
+					of certain changes. This practice of testing allows for researchers to construct 
+					hypotheses and learn why certain elements and aspects of a product impact user behaviour.
+				</p>
+				<br />
+
 				<h4>Usability Research</h4>
 				<p>
 					As (Lewis, 2014) states, usability can be looked at how an individual or series of 
@@ -143,17 +156,10 @@ const Description = () => {
 					In this case, we are looking into whether or not SSO is universally useable or 
 					if SSO has a greater appeal in terms of its universal usability.
 				</p>
+				
 				<br />
 				<br />
 				<br />
-				<br />
-				<br />
-				<h4>A/B Testing</h4>
-				<p>A/B Testing process involve gather data, identify goals, generate hypothesis, create variations, 
-					run experiment, and finally analyze the results ("A/B testing," n.d.).</p>
-				<p>The theory behind A/B testing is that we have a webpage and we change it to create a new version of that webpage ("A/B testing," n.d.). 
-					In our case, we have a webpage for traditional form sign up 
-					and we modify it to a Single-sign-on (Google SSO) webpage to compare which one the user prefer.</p>
 				<br />
 				<h1>Planning and Implementation</h1>
 				<br />
@@ -161,12 +167,7 @@ const Description = () => {
 				<br />
 				<br />
 				<br />
-				<p>
-					A/B testing. (n.d.).
-					<em> Optimizely: The World's Leading Progressive Delivery and Experimentation Platform.</em>
-					Retrieved May 25, 2021, from
-					https://www.optimizely.com/optimization-glossary/ab-testing/
-				</p>
+				
 
 				<LinkContainer to="/findings" className="mx-2 my-2">
 					<Button className="findingsBtn">Study Findings</Button>
@@ -208,6 +209,12 @@ const Description = () => {
 					Lewis, J. R. (2014).
 					<em> Usability: Lessons Learned … and Yet to Be Learned. </em>
 					Journal of Human–Computer Interaction, 23.
+				</p>
+				<p>
+					Optimizely. (n.d.).
+					<em> A/B Testing. </em>
+					Retrieved May 28, 2021, from
+					https://www.optimizely.com/optimization-glossary/ab-testing/
 				</p>
 				<p>
 					University of Southern California. (2021).
