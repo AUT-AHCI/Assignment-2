@@ -117,8 +117,11 @@ const Description = () => {
 				<br />
 
 				<h4>A/B Testing</h4>
-				<p>A/B testing processes involve...</p>
-				<p>The theory behind A/B testing is...</p>
+				<p>A/B Testing process involve gather data, identify goals, generate hypothesis, create variations, 
+					run experiment, and finally analyze the results ("A/B testing," n.d.).</p>
+				<p>The theory behind A/B testing is that we have a webpage and we change it to create a new version of that webpage ("A/B testing," n.d.). 
+					In our case, we have a webpage for traditional form sign up 
+					and we modify it to a Single-sign-on (Google SSO) webpage to compare which one the user prefer.</p>
 				<br />
 				<h4>Usability Research</h4>
 				<p>
