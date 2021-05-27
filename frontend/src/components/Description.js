@@ -94,7 +94,15 @@ const Description = () => {
 				<p>A/B testing processes involve...</p>
 				<p>The theory behind A/B testing is...</p>
 				<br />
-
+				<h4>Useability Research</h4>
+				<p>
+					As (Lewis, 2014) states, useability can be looked at how an individual or series of individual features work, in relation to the communication of an idea or concept. For example, as part of our study we are comparing whether or not SSO (single sign up) communicates with the user in a more concise fashion than a traditional form. In other words, we are looking to see if there is clear and precise understanding by the user when it comes to them using the two aforementioned methods. Furthermore, (Lewis, 2014) states that it is important to utilize quantitative and or qualitative methods when conducting a useability study. To that end we are incorporating quantitative as part of our research process.
+				</p>
+				<br />
+				<p>
+					According to (Hertzum, 2010), there are at least six different useability images. An image of useability being how useability is perceived. In our study we will be focusing on universal and perceived useability, as this best fits in with our study’s hypothesis. Perceived useability looks at how the user interacts with the useability system, in this case SSO and a traditional sign-up form. Whereas universal usability is more about making sure that everyone can use a system. In this case, we are looking into whether or not SSO is universally useable or if SSO has a greater appeal in terms of its universal useability.
+				</p>
+				<br />
 				<br />
 				<br />
 				<br />
@@ -130,6 +138,16 @@ const Description = () => {
 					<em> Quantitative Research Methods. </em>
 					Retrieved May 25, 2021, from
 					https://education.nova.edu/Resources/uploads/app/35/files/arc_doc/quantitative_research_methods.pdf
+				</p>
+				<p>
+					Hertzum, M. (2010).
+					<em> Images of Usability. </em>
+					Intl. Journal Of Human–Computer Interaction, 35.
+				</p>
+				<p>
+					Lewis, J. R. (2014).
+					<em> Usability: Lessons Learned … and Yet to Be Learned. </em>
+					Journal of Human–Computer Interaction, 23.
 				</p>
 
 				</div>				
