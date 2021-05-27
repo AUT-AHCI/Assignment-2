@@ -91,8 +91,11 @@ const Description = () => {
 				<br />
 
 				<h4>A/B Testing</h4>
-				<p>A/B testing processes involve...</p>
-				<p>The theory behind A/B testing is...</p>
+				<p>A/B Testing process involve gather data, identify goals, generate hypothesis, create variations, 
+					run experiment, and finally analyze the results ("A/B testing," n.d.).</p>
+				<p>The theory behind A/B testing is that we have a webpage and we change it to create a new version of that webpage ("A/B testing," n.d.). 
+					In our case, we have a webpage for traditional form sign up 
+					and we modify it to a Single-sign-on (Google SSO) webpage to compare which one the user prefer.</p>
 				<br />
 
 				<br />
@@ -120,10 +123,10 @@ const Description = () => {
 				<div className="references">
 				<h1>References</h1>
 				<p>
-					University of Southern California. (2021).
-					<em> Quantitative Methods. </em>
+					A/B testing. (n.d.).
+					<em> Optimizely: The World's Leading Progressive Delivery and Experimentation Platform.</em>
 					Retrieved May 25, 2021, from
-					https://libguides.usc.edu/writingguide/quantitative
+					https://www.optimizely.com/optimization-glossary/ab-testing/
 				</p>
 				<p>
 					Fischler, S. (n.d).
@@ -131,6 +134,14 @@ const Description = () => {
 					Retrieved May 25, 2021, from
 					https://education.nova.edu/Resources/uploads/app/35/files/arc_doc/quantitative_research_methods.pdf
 				</p>
+				<p>
+					University of Southern California. (2021).
+					<em> Quantitative Methods. </em>
+					Retrieved May 25, 2021, from
+					https://libguides.usc.edu/writingguide/quantitative
+				</p>
+				
+				
 
 				</div>				
 				<br />
