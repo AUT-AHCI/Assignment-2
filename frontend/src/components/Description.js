@@ -148,12 +148,25 @@ const Description = () => {
 				<br />
 				<br />
 				<br />
+				<h4>A/B Testing</h4>
+				<p>A/B Testing process involve gather data, identify goals, generate hypothesis, create variations, 
+					run experiment, and finally analyze the results ("A/B testing," n.d.).</p>
+				<p>The theory behind A/B testing is that we have a webpage and we change it to create a new version of that webpage ("A/B testing," n.d.). 
+					In our case, we have a webpage for traditional form sign up 
+					and we modify it to a Single-sign-on (Google SSO) webpage to compare which one the user prefer.</p>
+				<br />
 				<h1>Planning and Implementation</h1>
 				<br />
 				<p>we gonn do this and it's gonna be gr8</p>
 				<br />
 				<br />
 				<br />
+				<p>
+					A/B testing. (n.d.).
+					<em> Optimizely: The World's Leading Progressive Delivery and Experimentation Platform.</em>
+					Retrieved May 25, 2021, from
+					https://www.optimizely.com/optimization-glossary/ab-testing/
+				</p>
 
 				<LinkContainer to="/findings" className="mx-2 my-2">
 					<Button className="findingsBtn">Study Findings</Button>
