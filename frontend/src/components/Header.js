@@ -9,8 +9,6 @@ const Header = () => {
 			variant="dark"
 			collapseOnSelect
 			expand="md"
-			// style={{ position: 'fixed' }}
-			// style={{ background: 'linear-gradient(to right, #c31432, #240b36)' }}
 		>
 			<Container>
 				<Navbar.Brand>
