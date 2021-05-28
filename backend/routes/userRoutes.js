@@ -1,9 +1,17 @@
 const express = require('express');
-const { insertTime, insertSurvey } = require('../controllers/userController');
+const {
+	insertTime,
+	insertSurvey,
+	getUsabilityRatings,
+	getSurveyCount,
+} = require('../controllers/userController');
 
 const router = express.Router();
 
 router.route('/time').post(insertTime);
 router.route('/survey').post(insertSurvey);
+
+router.route('/survey/ratings').get(getUsabilityRatings);
+router.route('/survey/count').get(getSurveyCount);
 
 module.exports = router;

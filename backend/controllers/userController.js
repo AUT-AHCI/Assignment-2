@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const { insertTime, insertSurvey } = require('../data/users');
+const { insertTime, insertSurvey, getUsabilityRatings, getSurveyCount } = require('../data/users');
 
 exports.insertTime = asyncHandler(async (req, res) => {
 	const { email, ssoTime, formTime } = req.body;
@@ -28,4 +28,18 @@ exports.insertSurvey = asyncHandler(async (req, res) => {
 		res.status(401);
 		throw new Error('Invalid survey details');
 	}
+});
+
+exports.getUsabilityRatings = asyncHandler(async (req, res) => {
+	var data = await getUsabilityRatings(rating);
+	res.json(...data, {
+		valid: true,
+	});
+});
+exports.getSurveyCount = asyncHandler(async (req, res) => {
+	var count = await getSurveyCount(rating);
+	res.json({
+		valid: true,
+		count: count,
+	});
 });
