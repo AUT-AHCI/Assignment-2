@@ -132,7 +132,7 @@ const Description = () => {
 					hypotheses and learn why certain elements and aspects of a product impact user behaviour.
 				</p>
 				<br />
-				
+
 				<h4>Usability Research</h4>
 				<p>
 					As (Lewis, 2014) states, usability can be looked at how an individual or series of 
@@ -223,13 +223,7 @@ const Description = () => {
 					https://libguides.usc.edu/writingguide/quantitative
 				</p>
 
-				</div>				
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
+				</div>
 			</Container>
 		</div>
 	);

@@ -208,8 +208,7 @@ li {
 	width: auto;
 	margin: 5px;
 	margin-bottom: 50px;
-	background-color: #fff;
-	color: darkgrey;
+	background-color: rgba(0, 0, 0, 0.6);
 	/* text-align: left; */
 	border-radius: 10px;
 	letter-spacing: 0.25px;
@@ -218,20 +217,21 @@ li {
 .team-member p {
 	margin-bottom: 25px;
 	text-align: center;
-	padding: 0;
+	padding: 20px;
+	padding-top: 0px;
 	margin: 0;
 }
 
 .team-member h2 {
-	color: rgb(79, 85, 81);
 	font-size: 28px;
-	margin-top: 50px;
+	padding-top: 10px;
 	margin-left: 20px;
 	text-align: center;
 }
 
 .wrapper {
-	margin-top: 6%;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .wrapper h1 {
@@ -246,4 +246,10 @@ li {
 	width: auto;
 	justify-content: center;
 	line-height: 30px;
+}
+
+.footer {
+	background-color: black;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
