@@ -110,11 +110,11 @@ const Disclaimer = ({ next, setRecieve }) => {
 							<tbody>
 								<tr>
 									<td>
-										<input type="radio" id="term6" name="term6" />
+										<input type="radio" id="term6" name="termSummary" />
 										<label htmlFor="term6">Yes</label>
 									</td>
 									<td>
-										<input type="radio" id="term7" name="term7" />
+										<input type="radio" id="term7" name="termSummary" />
 										<label htmlFor="term7">No</label>
 									</td>
 								</tr>
