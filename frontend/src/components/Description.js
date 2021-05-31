@@ -117,6 +117,11 @@ const Description = () => {
 				<br />
 
 				<h4>A/B Testing</h4>
+				<p>A/B Testing process involve gather data, identify goals, generate hypothesis, create variations, 
+					run experiment, and finally analyze the results ("A/B testing," n.d.).</p>
+				<p>The theory behind A/B testing is that we have a webpage and we change it to create a new version of that webpage ("A/B testing," n.d.). 
+					In our case, we have a webpage for traditional form sign up 
+					and we modify it to a Single-sign-on (Google SSO) webpage to compare which one the user prefer.</p>
 				<p>
 					The methods involved in A/B testing typically follow the process of identifying 
 					elements to compare and measure, creating variations of the product reflecting 
@@ -163,7 +168,27 @@ const Description = () => {
 				<br />
 				<h1>Planning and Implementation</h1>
 				<br />
-				<p>we gonn do this and it's gonna be gr8</p>
+				<p>
+					
+					<ol type="1">
+						<li>We first started off with the initial idea and then looked at different ways in which the useability could be problematic for users.</li>
+						<li>We then established the research question: Are there any useability issues for a user using a form to sign up, and can these be mitigated through the use of a single sign on approach?</li>
+						<li>After we had established what we were trying to achieve, we broke the research down into various sub-questions.</li>
+						<ul>
+							<li>What is the average time for a set of users using ‘Single Sign On (SSO)’?</li>
+							<li>What is the average time for a set of users using ‘Form Sign Up’?</li>
+							<li>How does the useability of ‘Single Sign On (SSO)’ relate to the time spent by the user?</li>
+							<li>Is there a significant useability difference of using ‘Single Sign On (SSO)’ when compared to the useability of ‘Form Sign Up’ and is there any direct relation to the time taken by the user?</li>
+						</ul>
+						<li>Next a conclusion is drawn to determine whether or not our hypothesis was correct or if it was not. If hypothesis is incorrect, why is this and what was the cause of the hypothesis not being correct.</li>
+						<li>Lastly, a review is carried out on how the research was performed and recommendations are given to improve the research and collection process. This also allows for bias’s to be identified which may invalidate some of the research, if there are any biases.</li>
+					</ol>
+				</p>
+				<h1>Independed and Dependent Variables</h1>
+				<p>
+					Our independent variable is the user and our dependent variable the time taken by the user to complete each method of sign up and the response from the user when completing the survey. 
+					These act as metrics in which we can use to define the useability of both approaches.
+				</p>
 				<br />
 				<br />
 				<br />
@@ -183,6 +208,10 @@ const Description = () => {
 				<div className="references">
 				<h1>References</h1>
 				<p>
+					A/B testing. (n.d.).
+					<em> Optimizely: The World's Leading Progressive Delivery and Experimentation Platform.</em>
+					Retrieved May 25, 2021, from
+					https://www.optimizely.com/optimization-glossary/ab-testing/
 					Alzheimer Europe. (2009).
 					<em> The Four Main Approaches. </em>
 					Retrieved May 28, 2021, from
@@ -222,6 +251,8 @@ const Description = () => {
 					Retrieved May 25, 2021, from
 					https://libguides.usc.edu/writingguide/quantitative
 				</p>
+				
+				
 
 				</div>
 			</Container>
