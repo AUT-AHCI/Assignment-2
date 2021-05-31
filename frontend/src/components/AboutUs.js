@@ -11,8 +11,8 @@ const AboutUs = () => {
 				<div className="team-member">
 					<h2>Aaron</h2>
 					<p>
-						inside this one's mind, there is a scale that weighs that mischievous arece 
-						that berates others and a kind arece that allows others to fish the southern waters
+						inside one bee's mind, there is a scale that weighs that mischievous soul 
+						that berates others and a kind soul that allows others to fish the southern waters
 					</p>
 				</div>
 				<div className="team-member">
