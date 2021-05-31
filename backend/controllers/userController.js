@@ -17,14 +17,37 @@ exports.insertTime = asyncHandler(async (req, res) => {
 });
 
 exports.insertSurvey = asyncHandler(async (req, res) => {
-	const { email, formUsability, ssoUsability, preference, recieve } = req.body;
+	const {
+		email,
+		passwordRequirements,
+		formDelays,
+		ssoComfortabe,
+		ssoFeelSavedTime,
+		ssoIssues,
+		formUsability,
+		ssoUsability,
+		preference,
+		recieve,
+	} = req.body;
 
-	if (email && formUsability && ssoUsability && preference && recieve != undefined) {
-		insertSurvey(email, formUsability, ssoUsability, preference);
+	try {
+		insertSurvey(
+			email,
+			passwordRequirements,
+			formDelays,
+			ssoComfortabe,
+			ssoFeelSavedTime,
+			ssoIssues,
+			formUsability,
+			ssoUsability,
+			preference,
+			recieve
+		);
 		res.json({
 			valid: true,
 		});
-	} else {
+	} catch (error) {
+		console.log(error);
 		res.status(401);
 		throw new Error('Invalid survey details');
 	}

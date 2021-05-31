@@ -16,11 +16,27 @@ exports.insertTime = (email, sso_time, form_time) => {
 		});
 };
 
-exports.insertSurvey = (email, form_usability, sso_usability, preference, recieve) => {
+exports.insertSurvey = (
+	email,
+	password_requirements,
+	form_delays,
+	sso_comfortabe,
+	sso_feel_saved_time,
+	sso_issues,
+	form_usability,
+	sso_usability,
+	preference,
+	recieve
+) => {
 	database
 		.collection('surveys')
 		.add({
 			email: email,
+			password_requirements: Boolean(password_requirements),
+			form_delays: form_delays,
+			sso_comfortabe: Boolean(sso_comfortabe),
+			sso_feel_saved_time: Boolean(sso_feel_saved_time),
+			sso_issues: sso_issues,
 			form_usability: Number(form_usability),
 			sso_usability: Number(sso_usability),
 			preference: preference,
