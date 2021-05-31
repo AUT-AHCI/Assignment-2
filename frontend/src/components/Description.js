@@ -163,7 +163,27 @@ const Description = () => {
 				<br />
 				<h1>Planning and Implementation</h1>
 				<br />
-				<p>we gonn do this and it's gonna be gr8</p>
+				<p>
+					
+					<ol type="1">
+						<li>We first started off with the initial idea and then looked at different ways in which the useability could be problematic for users.</li>
+						<li>We then established the research question: Are there any useability issues for a user using a form to sign up, and can these be mitigated through the use of a single sign on approach?</li>
+						<li>After we had established what we were trying to achieve, we broke the research down into various sub-questions.</li>
+						<ul>
+							<li>What is the average time for a set of users using ‘Single Sign On (SSO)’?</li>
+							<li>What is the average time for a set of users using ‘Form Sign Up’?</li>
+							<li>How does the useability of ‘Single Sign On (SSO)’ relate to the time spent by the user?</li>
+							<li>Is there a significant useability difference of using ‘Single Sign On (SSO)’ when compared to the useability of ‘Form Sign Up’ and is there any direct relation to the time taken by the user?</li>
+						</ul>
+						<li>Next a conclusion is drawn to determine whether or not our hypothesis was correct or if it was not. If hypothesis is incorrect, why is this and what was the cause of the hypothesis not being correct.</li>
+						<li>Lastly, a review is carried out on how the research was performed and recommendations are given to improve the research and collection process. This also allows for bias’s to be identified which may invalidate some of the research, if there are any biases.</li>
+					</ol>
+				</p>
+				<h1>Independed and Dependent Variables</h1>
+				<p>
+					Our independent variable is the user and our dependent variable the time taken by the user to complete each method of sign up and the response from the user when completing the survey. 
+					These act as metrics in which we can use to define the useability of both approaches.
+				</p>
 				<br />
 				<br />
 				<br />
