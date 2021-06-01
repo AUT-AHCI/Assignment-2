@@ -18,7 +18,9 @@ const FirebaseSSO = ({ timeMethod, emailMethod, next, time }) => {
 				emailMethod(user.email);
 				next();
 			})
-			.catch((error) => {});
+			.catch((error) => {
+				console.log(error);
+			});
 	}
 
 	return (
