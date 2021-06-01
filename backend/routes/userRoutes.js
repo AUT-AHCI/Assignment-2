@@ -13,5 +13,6 @@ router.route('/survey').post(insertSurvey);
 
 router.route('/survey/ratings').get(getUsabilityRatings);
 router.route('/survey/count').get(getSurveyCount);
+router.route('/survey/times').get(getTimes);
 
 module.exports = router;

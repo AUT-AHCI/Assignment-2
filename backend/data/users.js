@@ -50,6 +50,11 @@ exports.insertSurvey = (
 		});
 };
 
+exports.getTimes = async () => {
+	const doc = await database.collection('times').get();
+	return doc.data();
+};
+
 exports.getSurveyCount = async () => {
 	var count;
 	for (var count = 0; count < 5; count++) {

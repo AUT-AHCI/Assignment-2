@@ -1,5 +1,11 @@
 const asyncHandler = require('express-async-handler');
-const { insertTime, insertSurvey, getUsabilityRatings, getSurveyCount } = require('../data/users');
+const {
+	insertTime,
+	insertSurvey,
+	getUsabilityRatings,
+	getSurveyCount,
+	getTimes,
+} = require('../data/users');
 
 exports.insertTime = asyncHandler(async (req, res) => {
 	const { email, ssoTime, formTime } = req.body;
@@ -54,13 +60,19 @@ exports.insertSurvey = asyncHandler(async (req, res) => {
 });
 
 exports.getUsabilityRatings = asyncHandler(async (req, res) => {
-	var data = await getUsabilityRatings(rating);
-	res.json(...data, {
-		valid: true,
-	});
+	var data = await getUsabilityRatings();
+	data['valid'] = true;
+	res.json(data);
 });
+
+exports.getTimes = asyncHandler(async (req, res) => {
+	var data = await getTimes();
+	data['valid'] = true;
+	res.json(data);
+});
+
 exports.getSurveyCount = asyncHandler(async (req, res) => {
-	var count = await getSurveyCount(rating);
+	var count = await getSurveyCount();
 	res.json({
 		valid: true,
 		count: count,
