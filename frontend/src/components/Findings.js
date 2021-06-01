@@ -1,5 +1,6 @@
-import React, {  } from 'react';
-import { Container} from 'react-bootstrap';
+import React, { useEffect, } from 'react';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import axios from 'axios';
 
 const Findings = () => {
 	
