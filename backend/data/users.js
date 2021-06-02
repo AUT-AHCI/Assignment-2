@@ -50,9 +50,28 @@ exports.insertSurvey = (
 		});
 };
 
+exports.getSurveyResults = async (fields) => {
+	const docs = await database.collection('surveys').get();
+	const data = [];
+	docs.forEach((doc) => {
+		const info = doc.data();
+		const result = {};
+		for (var field in fields) {
+			result[field] = info[field];
+		}
+	});
+	return data;
+};
+
 exports.getTimes = async () => {
-	const doc = await database.collection('times').get();
-	return doc.data();
+	const docs = await database.collection('times').get();
+	const data = [];
+	docs.forEach((doc) => {
+		const info = doc.data();
+		delete info.email;
+		data.push(info);
+	});
+	return data;
 };
 
 exports.getSurveyCount = async () => {
@@ -69,21 +88,21 @@ exports.getSurveyCount = async () => {
 };
 
 exports.getUsabilityRatings = async (rating) => {
-	var data = {};
-	for (var count = 0; count < 5; count++) {
+	var data = { sso: {}, form: {} };
+	for (var count = 1; count <= 5; count++) {
 		await database
 			.collection('surveys')
 			.where(`sso_usability`, '==', count)
 			.get()
 			.then((result) => {
-				data['sso'][count + 1] = result.size;
+				data['sso'][count] = result.size;
 			}, console.error);
 		await database
 			.collection('surveys')
 			.where(`form_usability`, '==', count)
 			.get()
 			.then((result) => {
-				data['form'][count + 1] = result.size;
+				data['form'][count] = result.size;
 			}, console.error);
 	}
 	return data;

@@ -27,7 +27,7 @@ exports.insertSurvey = asyncHandler(async (req, res) => {
 		email,
 		passwordRequirements,
 		formDelays,
-		ssoComfortabe,
+		ssoComfortable,
 		ssoFeelSavedTime,
 		ssoIssues,
 		formUsability,
@@ -35,13 +35,25 @@ exports.insertSurvey = asyncHandler(async (req, res) => {
 		preference,
 		recieve,
 	} = req.body;
+	console.log(
+		email,
+		passwordRequirements,
+		formDelays,
+		ssoComfortable,
+		ssoFeelSavedTime,
+		ssoIssues,
+		formUsability,
+		ssoUsability,
+		preference,
+		recieve
+	);
 
 	try {
 		insertSurvey(
 			email,
 			passwordRequirements,
 			formDelays,
-			ssoComfortabe,
+			ssoComfortable,
 			ssoFeelSavedTime,
 			ssoIssues,
 			formUsability,

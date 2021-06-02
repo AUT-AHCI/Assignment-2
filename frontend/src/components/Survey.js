@@ -16,7 +16,7 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 	const [passwordRequirements, setPasswordRequirements] = useState(-1);
 	const [formDelays, setFormDelays] = useState('');
 
-	const [ssoComfortabe, setSSOComfortabe] = useState(-1);
+	const [ssoComfortable, setSSOComfortable] = useState(-1);
 	const [ssoFeelSavedTime, setSSOFeelSavedTime] = useState(-1);
 	const [ssoIssues, setSSOIssues] = useState('');
 
@@ -33,7 +33,7 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 			ssoUsability === -1 ||
 			preference === null ||
 			passwordRequirements === -1 ||
-			ssoComfortabe === -1 ||
+			ssoComfortable === -1 ||
 			ssoFeelSavedTime === -1
 		) {
 			return;
@@ -45,6 +45,18 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 				'Content-Type': 'application/json',
 			},
 		};
+		console.log({
+			email,
+			passwordRequirements,
+			formDelays,
+			ssoComfortable,
+			ssoFeelSavedTime,
+			ssoIssues,
+			formUsability,
+			ssoUsability,
+			preference,
+			recieve,
+		});
 
 		await axios.post(
 			'/api/users/survey',
@@ -52,7 +64,7 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 				email,
 				passwordRequirements,
 				formDelays,
-				ssoComfortabe,
+				ssoComfortable,
 				ssoFeelSavedTime,
 				ssoIssues,
 				formUsability,
@@ -126,7 +138,7 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 						id="noter-text-area"
 						name="textarea"
 						value={formDelays}
-						onChange={(e) => setFormDelays(e.value)}
+						onChange={(e) => setFormDelays(e.target.value)}
 					/>
 				</div>
 
@@ -161,15 +173,15 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 					<ButtonGroup aria-label="" id="">
 						<Button
 							variant="secondary"
-							onClick={(e) => setSSOComfortabe(1)}
-							active={ssoComfortabe === 1}
+							onClick={(e) => setSSOComfortable(1)}
+							active={ssoComfortable === 1}
 						>
 							Yes
 						</Button>
 						<Button
 							variant="secondary"
-							onClick={(e) => setSSOComfortabe(0)}
-							active={ssoComfortabe === 0}
+							onClick={(e) => setSSOComfortable(0)}
+							active={ssoComfortable === 0}
 						>
 							No
 						</Button>
@@ -185,7 +197,7 @@ const Survey = ({ email, recieve, ssoTime, formTime, next }) => {
 						id="noter-text-area"
 						name="textarea"
 						value={ssoIssues}
-						onChange={(e) => setSSOIssues(e.value)}
+						onChange={(e) => setSSOIssues(e.target.value)}
 					/>
 				</div>
 
