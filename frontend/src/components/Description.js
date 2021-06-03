@@ -229,8 +229,9 @@ const Description = () => {
 						the research, if there are any biases.
 					</li>
 				</ol>
-
-				<h1>Independent and Dependent Variables</h1>
+				<br />
+				<h2>Independent and Dependent Variables</h2>
+				<br />
 				<p>
 					The independent variable of this study is the user, and the dependent variables
 					are the time taken by the user to complete each method of sign up, along with

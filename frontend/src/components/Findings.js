@@ -22,8 +22,7 @@ const Findings = () => {
                     Gathered data is translated into graphs, tables and charts to help 
                     readability and present the data in an understandable manner. 
                     Findings are then presented in a logical, sequential order 
-                    (University of Southern California, 2021), which are described but 
-                    not discussed until the discussion section.
+                    (University of Southern California, 2021).
                 </p>
                 <p>
                     We then utilized descriptive analysis to perform a primary level of 
@@ -50,7 +49,7 @@ const Findings = () => {
                 </p>
                 <p>
                     Over the course of our testing phase, we were able to retrieve 
-                    x results from participants.
+                    15 results from participants.
                 </p>
 
                 <br/><br/><br/>
