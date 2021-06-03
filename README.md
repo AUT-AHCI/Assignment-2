@@ -47,7 +47,7 @@ cd ./frontend && yarn
 cp .env.example .env
 ```
 
-then fill out the .env providing your mongodb information and jwt secret
+Edit both the base folder .env and the frontend/.env with your firebase frontend and backend configurations.
 
 ```
 npm run dev
@@ -69,3 +69,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </p>
 
 ## Credits
+
+Aaron, Ashley, Robert, Travis
