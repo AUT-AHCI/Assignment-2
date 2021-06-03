@@ -1,9 +1,9 @@
 <h1 align="center">
 	<br>
-	<a height="200" href="#" target="_blank" alt="Link to application"><img src="<img>" alt="Random image" width="200"></a>
+	<a height="200" href="https://aut-ahci.herokuapp.com/logo512.png" target="_blank" alt="Link to application"><img src="https://aut-ahci.herokuapp.com/logo512.png" alt="Random image" width="200"></a>
 	<br>
 	<br>
-	<p>Aut Games</p>
+	<p>AUT Study Assignment</p>
 </h1>
 
 <h4 align="center">Desc</h4>
@@ -16,7 +16,6 @@
 </p>
 
 <p align="center">
-		<a href="#demo">Demo</a> •
 		<a href="#how-to-use">How To Use</a> •
 		<a href="#key-features">Key Features</a> •
 		<a href="#local-instance">Local Instance</a> •
@@ -24,32 +23,31 @@
 		<a href="#credits">Credits</a>
 </p>
 
-## Demo
-
 ## How To Use
+
+Visit the <a href="https://aut-ahci.herokuapp.com/" target="_black">Study Website</a> to take park in the study.
 
 ## Key Features
 
+Records the amount of time participants spend on the sign-up form and sso pages
+Asks participants to answer a simple survey
+
 ## Local Instance
 
-Go to frontend folder and **run _npm install_ to install all the dependencies**
+```sh
+git clone https://github.com/AUT-AHCI/Assignment-2 ./aut-study
+```
 
-After dependencies are installed you can use following commands:
+and then
 
-**yarn start**
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+```
+cd ./aut-study && yarn;
+cp .env.example .env
+cd ./frontend && yarn
+cp .env.example .env
+```
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-**yarn test**
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-**yarn build**
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+then fill out the .env providing your mongodb information and jwt secret
 
 ```
 npm run dev
