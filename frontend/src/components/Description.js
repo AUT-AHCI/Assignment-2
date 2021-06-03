@@ -192,7 +192,7 @@ const Description = () => {
 					<li>
 						We then established the research question: Are traditional sign up forms
 						still ideal in this day and age and are there any evident usability issues
-						with it that can be improve it?
+						which can be improved upon?
 					</li>
 					<br />
 					<li>
