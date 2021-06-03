@@ -13,8 +13,8 @@ const Description = () => {
 	return (
 		<div style={containerStyle}>
 			<Container className="d-flex flex-column justify-content-center align-items-center w-50">
-				<br />
-				<br />
+				<br /><br />
+
 				<br />
 				<h1>Summary</h1>
 				<br />
@@ -34,10 +34,8 @@ const Description = () => {
 					and performances, with a survey at the end to gather feedback and preferences.
 				</p>
 
-				<br />
-				<br />
-				<br />
-				<br />
+				<br /><br />
+				<br /><br />
 				<h1>Question & Hypothesis</h1>
 				<br />
 				<p>The question we aim to answer through conducting this study is:</p>
@@ -51,10 +49,8 @@ const Description = () => {
 					however they will indicate preference for control over the account details.
 				</p>
 
-				<br />
-				<br />
-				<br />
-				<br />
+				<br /><br />
+				<br /><br />
 				<h1>Methodology</h1>
 				<br />
 				<p>
@@ -69,6 +65,7 @@ const Description = () => {
 						in a survey after both sign-up methods.
 					</li>
 				</ul>
+
 				<h4>Why Quantitative?</h4>
 				<p>
 					We have selected this methodology because quantitative research typically 
@@ -94,10 +91,8 @@ const Description = () => {
 					organized much earlier, qualitative research would have been the ideal choice.
 				</p>
 
-				<br />
-				<br />
-				<br />
-				<br />
+				<br /><br />
+				<br /><br />
 				<h2>Processes & Theory</h2>
 
 				<h4>Quantitative Research</h4>
@@ -162,49 +157,82 @@ const Description = () => {
 					if SSO has a greater appeal in terms of its universal usability.
 				</p>
 				
-				<br />
-				<br />
-				<br />
-				<br />
+				<br /><br />
+				<br /><br />
 				<h1>Planning and Implementation</h1>
-				<br />
-				<p>
-					
-					<ol type="1">
-						<li>We first started off with the initial idea and then looked at different ways in which the useability could be problematic for users.</li>
-						<li>We then established the research question: Are there any useability issues for a user using a form to sign up, and can these be mitigated through the use of a single sign on approach?</li>
-						<li>After we had established what we were trying to achieve, we broke the research down into various sub-questions.</li>
+				<br />	
+					<ol>
+						<li>
+							We first started off with the initial idea and then 
+							looked at different ways in which the usability could be 
+							problematic for users.
+						</li>
+						<br />
+						<li>
+							We then established the research question: 
+							Are traditional sign up forms still ideal in this day 
+							and age? Are there any evident usability issues with it, 
+							and can we improve it?
+						</li>
+						<br />
+						<li>
+							After we had established what we were trying to achieve, 
+							we broke the research down into various sub-questions:
+						</li>
 						<ul>
-							<li>What is the average time for a set of users using ‘Single Sign On (SSO)’?</li>
-							<li>What is the average time for a set of users using ‘Form Sign Up’?</li>
-							<li>How does the useability of ‘Single Sign On (SSO)’ relate to the time spent by the user?</li>
-							<li>Is there a significant useability difference of using ‘Single Sign On (SSO)’ when compared to the useability of ‘Form Sign Up’ and is there any direct relation to the time taken by the user?</li>
+							<li>
+								What is the average time for a set of users using 
+								‘Single Sign On (SSO)’?
+							</li>
+							<li>
+								What is the average time for a set of users using 
+								‘Form Sign Up’?
+							</li>
+							<li>
+								How does the usability of ‘Single Sign On (SSO)’ 
+								relate to the time spent by the user?
+							</li>
+							<li>
+								Is there a significant usability difference of using 
+								‘Single Sign On (SSO)’ when compared to ‘Form Sign Up’ 
+								and is there any direct relation to the time taken by 
+								the user?
+							</li>
 						</ul>
-						<li>Next a conclusion is drawn to determine whether or not our hypothesis was correct or if it was not. If hypothesis is incorrect, why is this and what was the cause of the hypothesis not being correct.</li>
-						<li>Lastly, a review is carried out on how the research was performed and recommendations are given to improve the research and collection process. This also allows for bias’s to be identified which may invalidate some of the research, if there are any biases.</li>
+						<br />
+						<li>
+							Next a conclusion is drawn to determine whether or not 
+							our hypothesis was correct or if it was not. If hypothesis 
+							is incorrect, why is this and what was the cause of the 
+							hypothesis not being correct.
+						</li>
+						<br />
+						<li>
+							Lastly, a review is carried out on how the research was 
+							performed and recommendations are given to improve the 
+							research and collection process. This also allows for 
+							biases to be identified which may invalidate some of 
+							the research, if there are any biases.
+						</li>
 					</ol>
-				</p>
-				<h1>Independed and Dependent Variables</h1>
+				
+				<h1>Independent and Dependent Variables</h1>
 				<p>
-					Our independent variable is the user and our dependent variable the time taken by the user to complete each method of sign up and the response from the user when completing the survey. 
-					These act as metrics in which we can use to define the useability of both approaches.
+					The independent variable of this study is the user, and the 
+					dependent variables are the time taken by the user to complete 
+					each method of sign up, along with the response from the user 
+					when completing the survey. These act as metrics in which we 
+					can use to define the usability of both approaches.
 				</p>
-				<br />
-				<br />
-				<br />
+				<br /><br /><br />
 				
 
 				<LinkContainer to="/findings" className="mx-2 my-2">
 					<Button className="findingsBtn">Study Findings</Button>
 				</LinkContainer>
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
+				<br /><br /><br />
 
-				<br />
-				<br />
+				<br /><br /><br /><br />
 				<div className="references">
 				<h1>References</h1>
 				<p>
@@ -212,6 +240,9 @@ const Description = () => {
 					<em> Optimizely: The World's Leading Progressive Delivery and Experimentation Platform.</em>
 					Retrieved May 25, 2021, from
 					https://www.optimizely.com/optimization-glossary/ab-testing/
+					
+				</p>
+				<p>
 					Alzheimer Europe. (2009).
 					<em> The Four Main Approaches. </em>
 					Retrieved May 28, 2021, from
@@ -255,6 +286,7 @@ const Description = () => {
 				
 
 				</div>
+				<br/><br/><br/>
 			</Container>
 		</div>
 	);
