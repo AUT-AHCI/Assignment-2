@@ -11,9 +11,10 @@ const AboutUs = () => {
 				<div className="team-member">
 					<h2>Aaron</h2>
 					<p>
-						inside one bee's mind, there is a scale that weighs that mischievous soul
-						that berates others and a kind soul that allows others to fish the southern
-						waters
+						University student of four years currently undertaking the BCIS degree 
+						at AUT, majoring in Software Dev.<br /> Studying computer science due to a 
+						general interest in technology and an apparent latent skill around 
+						programming, however still trying to figure out my niche.
 					</p>
 				</div>
 				<div className="team-member">
