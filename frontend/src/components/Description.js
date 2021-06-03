@@ -160,7 +160,17 @@ const Description = () => {
 				<br /><br />
 				<br /><br />
 				<h1>Planning and Implementation</h1>
-				<br />	
+				<br />
+				<p>
+					To undertake our research, we have developed an online, mock sign-up system, which participants
+					will be provided access to in order to gauge their performance and gather feedback.
+					<br />
+					Participants will engage with both methods of sign-in, SSO and traditional form sign-up, with 
+					the time taken to complete each being measured.
+					<br />
+					Following completion of the sign-ins, the participants are provided a short questionnaire 
+					for them to provide feedback on the two types of sign-in.
+				</p>	
 					<ol>
 						<li>
 							We first started off with the initial idea and then 
