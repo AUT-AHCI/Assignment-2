@@ -184,73 +184,66 @@ const Description = () => {
 				<h1>Planning and Implementation</h1>
 				<br />
 				<p>
-					To undertake our research, we have developed an online, mock sign-up system, which participants
-					will be provided access to in order to gauge their performance and gather feedback.
+					We first started off with the research topic of traditional form usability, 
+					looking at different ways in which the usability could be problematic for users 
+					or improved upon, such as through SSO.
+					<br /><br />
+					We then established the research question:
 					<br />
-					Participants will engage with both methods of sign-in, SSO and traditional form sign-up, with 
-					the time taken to complete each being measured.
-					<br />
-					Following completion of the sign-ins, the participants are provided a short questionnaire 
-					for them to provide feedback on the two types of sign-in.
-				</p>	
-					<ol>
-						<li>
-							We first started off with the initial idea and then 
-							looked at different ways in which the usability could be 
-							problematic for users.
-						</li>
-						<br />
-						<li>
-							We then established the research question: 
-							Are traditional sign up forms still ideal in this day and age and 
-							are there any evident usability issues which can be improved upon?
-						</li>
-						<br />
-						<li>
-							After we had established what we were trying to achieve, 
-							we broke the research down into various sub-questions:
-						</li>
-						<ul>
-							<li>
-								What is the average time for a set of users using ‘Single Sign On
-								(SSO)’?
-							</li>
-							<li>
-								What is the average time for a set of users using ‘Form Sign Up’?
-							</li>
-							<li>
-								How does the usability of ‘Single Sign On (SSO)’ relate to the time
-								spent by the user?
-							</li>
-							<li>
-								Is there a significant usability difference of using ‘Single Sign On
-								(SSO)’ when compared to ‘Form Sign Up’ and is there any direct relation
-								to the time taken by the user?
-							</li>
-						</ul>
-					<br />
-					<li>
-						Next a conclusion is drawn to determine whether or not our hypothesis was
-						correct or if it was not. If hypothesis is incorrect, why is this and what
-						was the cause of the hypothesis not being correct.
-					</li>
-					<br />
-					<li>
-						Lastly, a review is carried out on how the research was performed and
-						recommendations are given to improve the research and collection process.
-						This also allows for biases to be identified which may invalidate some of
-						the research, if there are any biases.
-					</li>
-					</ol>
-				<br />
-				<h2>Independent and Dependent Variables</h2>
-				<br />
-				<p>
-					The independent variable of this study is the user, and the dependent variables
-					are the time taken by the user to complete each method of sign up, along with
-					the response from the user when completing the survey. These act as metrics in
-					which we can use to define the usability of both approaches.
+					Are traditional sign-up forms still ideal in this day and age and 
+					are there any evident usability issues which can be improved upon?
+					<br /><br />
+					After we had established what we were trying to achieve, we broke the research 
+					down into various sub-questions:
 				</p>
+				<ul>
+					<li>
+						What is the average time for a set of users using ‘Single Sign On (SSO)’?
+					</li>
+					<li>
+						What is the average time for a set of users using ‘Form Sign Up’?
+					</li>
+					<li>
+						How does the usability of ‘Single Sign On (SSO)’ relate to the time spent by the user?
+					</li>
+					<li>
+						Is there a significant usability difference of using ‘Single Sign On (SSO)’ when 
+						compared to ‘Form Sign Up’ and is there any direct relation to the time taken by the user?
+					</li>
+				</ul>
+				<br /><br />
+				<p>
+					To undertake our research, we have developed an online, mock sign-up system. 
+					Which participants will be provided access to in order to gauge their performance 
+					and gather feedback.
+					<br /><br />
+					Participants will engage with both methods of sign-in, SSO and traditional form sign-up. 
+					With the time taken to complete each being measured.
+					<br /><br />
+					Following completion of the sign-ins, the participants are provided a short 
+					questionnaire for them to provide feedback on the two types of sign-in.
+					<br /><br />
+					As participants complete the study activity in their own time. The participants data 
+					and feedback from the survey will be stored in a database, for which we can then 
+					access to perform analysis upon. This analysis phase will start once the data 
+					gathering phase has been completed.
+					<br /><br />
+					Once the data gathering phase has been completed, we then can pull the stored data 
+					into excel to create the various graphs and tables we will use to perform our 
+					statistical analysis upon. As a team we plan to hold a meeting to collectively 
+					perform analysis and interpretation of the data, finding trends, relationships, 
+					and implications.
+					<br /><br />
+					Next a conclusion will be drawn to summarize our findings and determine whether 
+					or not our hypothesis was correct or if it was not. If our hypothesis is proven 
+					to be incorrect, we discuss why and the meaning behind it.
+					<br /><br />
+					Lastly, a review is carried out on how the research was performed and recommendations 
+					are given to improve the research and collection process. This also allows for 
+					biases to be identified which may invalidate some of the research, if there are any biases.
+				</p>
+
+
 				<br />
 				<br />
 				<br />

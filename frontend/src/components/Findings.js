@@ -62,7 +62,7 @@ const Findings = () => {
                     be the result of users having previous experience using sign-up forms from other 
                     websites in the past, which usually require strict and strong passwords.
                 </p>
-                <img src="/charts/Picture1.png" width="90%"/>
+                <img src="/charts/Picture1.png" width="90%" alt="Password Difficulty"/>
                 <br /><br /><br />
                 <p>
                     Participants on average found the SSO comfortable to utilize when signing up. 
@@ -71,7 +71,7 @@ const Findings = () => {
                     The issue with mobile was fixed by the user attempting from their computer instead, 
                     although other users did not face this issue. 
                 </p>
-                <img src="/charts/Picture2.png" width="90%"/>
+                <img src="/charts/Picture2.png" width="90%" alt="Usability Issues"/>
                 <br /><br /><br />
                 <p>
                     Most participants found that SSO would save them time when signing up. 
@@ -81,7 +81,7 @@ const Findings = () => {
                     of participants that did not encounter any issues. Though as stated previously, 
                     this is inconclusive at this time.
                 </p>
-                <img src="/charts/Picture3.png" width="90%"/>
+                <img src="/charts/Picture3.png" width="90%" alt="Delays"/>
                 <br /><br /><br />
                 <p>
                     There were several usability factors that resulted in our participants encountering 
@@ -93,7 +93,7 @@ const Findings = () => {
                     would have preferred a notification of all of the password requirements instead of a 
                     notification of the individual criteria that were not initially meet.
                 </p>
-                <img src="/charts/Picture4.png" width="90%"/>
+                <img src="/charts/Picture4.png" width="90%" alt="User Preference"/>
                 <br /><br /><br />
                 <p>
                     A large proportion of participants preferred SSO over Form sign up. This was due to several 
@@ -103,7 +103,7 @@ const Findings = () => {
                     this does not conclusively tell us that. However, when the degree of comfort with SSO is 
                     brought in we start to paint a picture of this.
                 </p>
-                <img src="/charts/Picture5.png" width="90%"/>
+                <img src="/charts/Picture5.png" width="90%" alt="User Comfort with SSO"/>
                 <br /><br /><br />
                 <p>
                     As seen in the above image. Our participants were 53% comfortable using SSO in terms of the 
@@ -117,7 +117,7 @@ const Findings = () => {
                     of SSO. This leads us to conclude that SSO does have some usability issues, which will require 
                     further study to identify more accurately.
                 </p>
-                <img src="/charts/Picture6.png" width="90%"/>
+                <img src="/charts/Picture6.png" width="90%" alt="Form Usability"/>
                 <br /><br /><br />
                 <p>
                     As expected in our hypothesis, along with following the preference of the participants, 
@@ -127,9 +127,9 @@ const Findings = () => {
                     the below graph is compared. We can see how the usability of the sign-up methods for each 
                     person is reflected across both graphs.
                 </p>
-                <img src="/charts/Picture7.png" width="90%"/>
+                <img src="/charts/Picture7.png" width="90%" alt="Time Taken"/>
                 <br /><br /><br />
-                <img src="/charts/Picture8.png" width="90%"/>
+                <img src="/charts/Picture8.png" width="90%" alt="Average and median times taken"/>
                 <br /><br /><br />
                 <p>
                     As you can see in the above diagram, a form takes on average ~50% more than SSO to complete. 
@@ -137,7 +137,7 @@ const Findings = () => {
                     tells us that SSO has a lesser amount of usability issues than form sign up. 
                     However, SSO still has some usability issues as previously mentioned.
                 </p>
-                <img src="/charts/Picture9.png" width="90%"/>
+                <img src="/charts/Picture9.png" width="90%" alt="Perceived time saved"/>
                 <br /><br /><br />
                 <p>
                     Even though the number of seconds does not differ much in doing both SSO and form sign up, 
@@ -145,7 +145,7 @@ const Findings = () => {
                     some time by doing SSO since they do not have to go through matching the password requirements 
                     that is required by the form sign up.
                 </p>
-                <img src="/charts/Picture10.png" width="90%"/>
+                <img src="/charts/Picture10.png" width="90%" alt="Box"/>
                 <br /><br /><br />
                 <p>
                     There is one outlier for the form at approximately 110 and none for the SSO. 
@@ -157,7 +157,7 @@ const Findings = () => {
                     both methods. This is be reflected in the usability rating as several other usability factors 
                     such as usability issues, comfortability with using SSO and overall preference.
                 </p>
-                <img src="/charts/Picture11.png" width="90%"/>
+                <img src="/charts/Picture11.png" width="90%" alt="Whether participants felt time was saved"/>
                 <br /><br /><br />
                 <p>
                     Furthermore, the perceived time by the participants was 87% more than form sign-up. 
