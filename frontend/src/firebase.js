@@ -9,6 +9,6 @@ require('dotenv').config();
  */
 export function init() {
 	if (!firebase.apps.length) {
-		firebase.initializeApp(JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG));
+		firebase.initializeApp(JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG_FRONTEND));
 	}
 }

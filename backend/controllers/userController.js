@@ -1,5 +1,11 @@
 const asyncHandler = require('express-async-handler');
-const { insertTime, insertSurvey } = require('../data/users');
+const {
+	insertTime,
+	insertSurvey,
+	getUsabilityRatings,
+	getSurveyCount,
+	getTimes,
+} = require('../data/users');
 
 exports.insertTime = asyncHandler(async (req, res) => {
 	const { email, ssoTime, formTime } = req.body;
@@ -17,15 +23,70 @@ exports.insertTime = asyncHandler(async (req, res) => {
 });
 
 exports.insertSurvey = asyncHandler(async (req, res) => {
-	const { email, formUsability, ssoUsability, preference, recieve } = req.body;
+	const {
+		email,
+		passwordRequirements,
+		formDelays,
+		ssoComfortable,
+		ssoFeelSavedTime,
+		ssoIssues,
+		formUsability,
+		ssoUsability,
+		preference,
+		recieve,
+	} = req.body;
+	console.log(
+		email,
+		passwordRequirements,
+		formDelays,
+		ssoComfortable,
+		ssoFeelSavedTime,
+		ssoIssues,
+		formUsability,
+		ssoUsability,
+		preference,
+		recieve
+	);
 
-	if (email && formUsability && ssoUsability && preference && recieve != undefined) {
-		insertSurvey(email, formUsability, ssoUsability, preference);
+	try {
+		insertSurvey(
+			email,
+			passwordRequirements,
+			formDelays,
+			ssoComfortable,
+			ssoFeelSavedTime,
+			ssoIssues,
+			formUsability,
+			ssoUsability,
+			preference,
+			recieve
+		);
 		res.json({
 			valid: true,
 		});
-	} else {
+	} catch (error) {
+		console.log(error);
 		res.status(401);
 		throw new Error('Invalid survey details');
 	}
+});
+
+exports.getUsabilityRatings = asyncHandler(async (req, res) => {
+	var data = await getUsabilityRatings();
+	data['valid'] = true;
+	res.json(data);
+});
+
+exports.getTimes = asyncHandler(async (req, res) => {
+	var data = await getTimes();
+	data['valid'] = true;
+	res.json(data);
+});
+
+exports.getSurveyCount = asyncHandler(async (req, res) => {
+	var count = await getSurveyCount();
+	res.json({
+		valid: true,
+		count: count,
+	});
 });
